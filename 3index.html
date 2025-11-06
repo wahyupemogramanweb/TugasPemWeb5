@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <h1 id="main-title" class="header-title" title="Halaman Profil Pribadi">Profil Pribadi Saya</h1>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <img 
+                src="nailongningga.jpg" alt="Foto Profil Saya" 
+                width="200" 
+                height="200"
+                class="profile-img"
+                title="Foto Profil"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <div style="width: 200px; height: 200px; border-radius: 50%; border: 5px solid #4CAF50; margin: 0 auto; display: none; align-items: center; justify-content: center; background-color: #f0f0f0; font-size: 14px; color: #666;">
+                Foto Profil
+            </div>
+        </div>
+        
+        <div class="section" id="identitas">
+            <h2>Identitas Diri</h2>
+            
+            <p id="nama" class="info-paragraph" title="Nama Lengkap">
+                <strong>Nama Lengkap:</strong> Muh. Wahyu Ramadhan
+            </p>
+            
+            <p id="nim" class="info-paragraph" title="Nomor Induk Mahasiswa">
+                <strong>NIM:</strong> 246270043
+            </p>
+            
+            <p id="hobi" class="info-paragraph" title="Hobi Saya">
+                <strong>Hobi:</strong> Saya sangat menyukai kegiatan membaca buku, terutama novel fiksi. 
+                Selain itu, saya juga gemar bermain game bersama teman-teman di malam hari dan mendengarkan musik 
+                sambil belajar dan untuk melepas penat setelah beraktivitas.
+            </p>
+        </div>
+        
+        <div class="section" id="biodata-section">
+            <h2>Biodata Lengkap</h2>
+            <table id="tabel-biodata" class="biodata-table" title="Tabel Biodata">
+                <tr>
+                    <th>Keterangan</th>
+                    <th>Informasi</th>
+                </tr>
+                <tr>
+                    <td>Nama</td>
+                    <td>Muh. Wahyu Ramadhan</td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>15 Januari 2006</td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>Perumahan Bumi Kelapa Kalukubula</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>muhwahyuramadhan2006.com</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section" id="hobi-section">
+            <h2>Daftar Hobi</h2>
+            <ul id="list-hobi" class="hobby-list" title="Daftar Hobi Favorit">
+                <li>Membaca buku novel fiksi</li>
+                <li>Bermain game</li>
+                <li>Mendengarkan musik</li>
+                <li>Bermain game online</li>
+                <li>Traveling ke tempat-tempat baru</li>
+            </ul>
+        </div>
+        
+        <div class="section" id="aktivitas-section">
+            <h2>Aktivitas Favorit (Berurutan)</h2>
+            <ol id="list-aktivitas" class="activity-list" title="Aktivitas Favorit">
+                <li>Belajar pemrograman web</li>
+                <li>Olahraga pagi setiap hari Minggu</li>
+                <li>Menonton film di bioskop</li>
+                <li>Berkumpul dengan keluarga</li>
+                <li>Mengikuti lomba game</li>
+            </ol>
+        </div>
+        
+        <div class="section" id="form-section">
+            <h2>Form Kontak</h2>
+            <form id="contact-form" class="contact-form" title="Formulir Kontak">
+            
+                <div class="form-group">
+                    <label for="input-nama">Nama:</label>
+                    <input 
+                        type="text" 
+                        id="input-nama" 
+                        name="nama" 
+                        class="form-input"
+                        placeholder="Masukkan nama lengkap Anda"
+                        title="Masukkan nama lengkap"
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="input-email">Email:</label>
+                    <input 
+                        type="email" 
+                        id="input-email" 
+                        name="email" 
+                        class="form-input"
+                        placeholder="contoh@email.com"
+                        title="Masukkan alamat email"
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label>Jenis Kelamin:</label>
+                    <div class="radio-group">
+                        <label title="Pilih Laki-laki">
+                            <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki">
+                            Laki-laki
+                        </label>
+                        <label title="Pilih Perempuan">
+                            <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+                            Perempuan
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Hobi:</label>
+                    <div class="checkbox-group">
+                        <label title="Hobi Membaca">
+                            <input type="checkbox" id="hobi-membaca" name="hobi" value="membaca" class="hobby-checkbox">
+                            Membaca
+                        </label>
+                        <label title="Hobi Olahraga">
+                            <input type="checkbox" id="hobi-olahraga" name="hobi" value="olahraga" class="hobby-checkbox">
+                            Olahraga
+                        </label>
+                        <label title="Hobi Musik">
+                            <input type="checkbox" id="hobi-musik" name="hobi" value="musik" class="hobby-checkbox">
+                            Musik
+                        </label>
+                        <label title="Hobi Traveling">
+                            <input type="checkbox" id="hobi-traveling" name="hobi" value="traveling" class="hobby-checkbox">
+                            Traveling
+                        </label>
+                    </div>
+                </div>
+                
+                <button type="submit" id="submit-btn" class="submit-button" title="Kirim Formulir">
+                    Submit
+                </button>
+            </form>
+        </div>
+        
+        <div style="margin-top: 40px; text-align: center; color: #666; border-top: 1px solid #ddd; padding-top: 20px;">
+            <p>&copy; 2025 Profil Pribadi Saya. All rights reserved.</p>
+        </div>
+    </div>
+    
+    <script>
+    
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Form berhasil dikirim.');
+        });
+    </script>
+</body>
+</html>
